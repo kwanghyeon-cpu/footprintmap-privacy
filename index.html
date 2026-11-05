@@ -32,14 +32,15 @@
   <li><strong>신체 활동 정보</strong>: 걷기·자전거·차량·정지 상태를 알아내 멈춰 있을 때 GPS를 꺼서 배터리를 아끼고, 설정에 따라 차량 이동을 기록에서 빼는 데 사용합니다. 활동 정보 자체는 저장하지 않습니다.</li>
   <li><strong>사용자가 고른 파일</strong>: 구글 지도 타임라인 내보내기 파일, GPX 파일, 백업 파일을 불러올 때, 그 파일을 기기 안에서만 읽습니다.</li>
 </ul>
-<p>앱은 이름, 전화번호, 이메일, 광고 식별자를 수집하지 않습니다. 광고와 이용 분석 도구를 쓰지 않습니다.</p>
+<p>앱은 이름, 전화번호, 이메일을 수집하지 않습니다. 이용 분석 도구는 쓰지 않습니다.</p>
+<p><strong>광고</strong>: 앱 화면 아래에 Google AdMob 배너 광고가 나옵니다. 광고를 보여주고 부정 클릭을 막기 위해 Google이 광고 식별자, IP 주소, 기기·앱 정보를 수집할 수 있으며, 이는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에 따라 처리됩니다. 앱은 위치 기록·메모·이동 거리를 광고에 쓰거나 Google에 보내지 않습니다. 유럽 등 동의가 필요한 지역에서는 광고 전에 Google 동의 창이 뜨며, 나중에 <strong>나의 탐험 → 정보 → 광고 개인정보 설정</strong>에서 바꿀 수 있습니다. 맞춤 광고는 휴대전화 설정 &gt; Google &gt; 광고에서 끄거나 광고 ID를 삭제할 수 있습니다.</p>
 
 <h2>2. 백그라운드 위치 사용</h2>
 <p>사용자가 앱에서 <strong>[계속 기록하기]</strong>를 누르면, 화면이 꺼져 있거나 다른 앱을 쓰는 동안에도 지나간 곳을 기록합니다. 기록하는 동안에는 알림이 항상 표시되며, 알림이나 앱의 <strong>[기록 중지]</strong>로 언제든 멈출 수 있습니다. [계속 기록하기]를 누르지 않으면 앱이 화면에 보이는 동안에만 위치를 사용합니다. 앱은 "항상 허용" 위치 권한을 요청하지 않습니다.</p>
 
 <h2>3. 정보의 저장과 전송</h2>
 <ul>
-  <li>모든 기록은 기기 안의 앱 저장소에만 저장됩니다. 개인정보를 제3자에게 제공하거나 처리를 위탁하지 않습니다.</li>
+  <li>모든 기록은 기기 안의 앱 저장소에만 저장됩니다. 개발자는 개인정보를 제3자에게 제공하거나 처리를 위탁하지 않습니다(광고 SDK가 처리하는 정보는 위 "광고" 문단 참고).</li>
   <li>지도 표시를 위해 Google 지도 SDK를 사용합니다. 지도를 보여주는 과정에서 Google이 기기 정보와 지도 화면 영역을 처리할 수 있으며, 이는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.</li>
   <li>한국 밖에서 동네 이름을 찾을 때 기기의 주소 변환 기능(Geocoder)을 사용할 수 있으며, 이때 약 500m 구역의 중심 좌표가 기기 제조사 또는 Google의 위치 서비스로 전달될 수 있습니다. 한국 안에서는 앱에 들어 있는 행정동 경계로 기기 안에서만 찾습니다.</li>
   <li>[산책 코스]에서 [길 안내]를 누르면 지금 위치와 경유지 좌표가 담긴 길 안내 주소를 구글 지도 앱(또는 브라우저)으로 엽니다.</li>
@@ -75,14 +76,15 @@
   <li><strong>Physical activity</strong>: used to turn GPS off while you are still (to save battery) and, if you choose, to skip trips by vehicle. Activity data itself is not stored.</li>
   <li><strong>Files you choose</strong>: Google Maps Timeline exports, GPX files and backups are read on the device only.</li>
 </ul>
-<p>The app does not collect your name, phone number, email or advertising ID, and contains no ads or analytics.</p>
+<p>The app does not collect your name, phone number or email, and uses no analytics tools.</p>
+<p><strong>Ads</strong>: a Google AdMob banner appears at the bottom of the screen. To show ads and prevent fraud, Google may collect the advertising ID, IP address and device/app information under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app never uses or sends your location history, notes or distances for ads. Where consent is required (e.g. the EU), Google's consent form appears first; you can change it later in <strong>My exploration → About → Ad privacy settings</strong>. You can turn off personalized ads or delete your advertising ID in your phone's Settings &gt; Google &gt; Ads.</p>
 
 <h2>2. Background location</h2>
 <p>When you tap <strong>Keep recording</strong>, the app keeps recording while the screen is off, using a foreground service with an always-visible notification. Stop it any time from the notification or the app. The app does not request "Allow all the time" location access.</p>
 
 <h2>3. Storage and transfer</h2>
 <ul>
-  <li>All records stay in the app's storage on your device. No personal data is shared with or outsourced to third parties.</li>
+  <li>All records stay in the app's storage on your device. The developer does not share personal data with or outsource it to third parties (for data handled by the ad SDK, see "Ads" above).</li>
   <li>The map is shown with the Google Maps SDK, which may process device information and the visible map area under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
   <li>Outside Korea, neighborhood names may be looked up with the device Geocoder, which can send the center of a ~500 m block to the device maker's or Google's location service.</li>
   <li>Tapping <strong>Directions</strong> on a walk route opens Google Maps with your location and waypoints.</li>
