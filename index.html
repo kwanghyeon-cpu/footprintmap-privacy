@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 - 발자국지도 (Footprint Map)</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1b2236; --muted:#5a6380; --rule:#dfe3ef; --accent:#3949ab; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#11151f; --fg:#e8ebf5; --muted:#a3abc6; --rule:#2a3146; --accent:#9fa8ff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:2rem 0 .5rem; padding-bottom:4px; border-bottom:1px solid var(--rule); }
+  .muted { color:var(--muted); font-size:.9rem; }
+  a { color:var(--accent); }
+  nav { margin:0 0 24px; }
+  hr { border:0; border-top:1px solid var(--rule); margin:48px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>발자국지도 개인정보처리방침</h1>
+<p class="muted">시행일: 2026년 11월 5일</p>
+<nav class="muted"><a href="#en">English</a></nav>
+
+<p>발자국지도(이하 "앱")는 사용자가 지나간 곳을 지도 위에 기록해 보여주는 앱입니다. 앱은 「개인정보 보호법」을 지키며, <strong>회원가입이 없고, 위치 기록을 사용자의 기기 안에만 저장합니다.</strong> 개발자를 포함한 누구에게도 위치 기록을 전송하지 않습니다.</p>
+
+<h2>1. 처리하는 정보</h2>
+<ul>
+  <li><strong>위치 정보</strong>: 지나간 곳을 기록하기 위해 기기의 위치(GPS, Wi-Fi, 기지국)를 사용합니다. 정확한 좌표가 아니라 약 20m 크기의 격자 칸 번호, 처음 지나간 날짜, 지나간 횟수만 저장합니다. 오늘의 보물 위치(근처 안 가본 곳), 날마다 기록하며 움직인 거리와 시간도 기기에 저장합니다.</li>
+  <li><strong>사용자가 남긴 메모와 비공개 구역</strong>: 지도에 남긴 메모(자리, 제목, 내용)와 비공개 구역(자리, 반경, 이름)을 기기에 저장합니다. 비공개 구역은 공유 이미지와 타임랩스 영상에서 그 자리를 가리는 데만 씁니다.</li>
+  <li><strong>신체 활동 정보</strong>: 걷기·자전거·차량·정지 상태를 알아내 멈춰 있을 때 GPS를 꺼서 배터리를 아끼고, 설정에 따라 차량 이동을 기록에서 빼는 데 사용합니다. 활동 정보 자체는 저장하지 않습니다.</li>
+  <li><strong>사용자가 고른 파일</strong>: 구글 지도 타임라인 내보내기 파일, GPX 파일, 백업 파일을 불러올 때, 그 파일을 기기 안에서만 읽습니다.</li>
+</ul>
+<p>앱은 이름, 전화번호, 이메일, 광고 식별자를 수집하지 않습니다. 광고와 이용 분석 도구를 쓰지 않습니다.</p>
+
+<h2>2. 백그라운드 위치 사용</h2>
+<p>사용자가 앱에서 <strong>[계속 기록하기]</strong>를 누르면, 화면이 꺼져 있거나 다른 앱을 쓰는 동안에도 지나간 곳을 기록합니다. 기록하는 동안에는 알림이 항상 표시되며, 알림이나 앱의 <strong>[기록 중지]</strong>로 언제든 멈출 수 있습니다. [계속 기록하기]를 누르지 않으면 앱이 화면에 보이는 동안에만 위치를 사용합니다. 앱은 "항상 허용" 위치 권한을 요청하지 않습니다.</p>
+
+<h2>3. 정보의 저장과 전송</h2>
+<ul>
+  <li>모든 기록은 기기 안의 앱 저장소에만 저장됩니다. 개인정보를 제3자에게 제공하거나 처리를 위탁하지 않습니다.</li>
+  <li>지도 표시를 위해 Google 지도 SDK를 사용합니다. 지도를 보여주는 과정에서 Google이 기기 정보와 지도 화면 영역을 처리할 수 있으며, 이는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.</li>
+  <li>한국 밖에서 동네 이름을 찾을 때 기기의 주소 변환 기능(Geocoder)을 사용할 수 있으며, 이때 약 500m 구역의 중심 좌표가 기기 제조사 또는 Google의 위치 서비스로 전달될 수 있습니다. 한국 안에서는 앱에 들어 있는 행정동 경계로 기기 안에서만 찾습니다.</li>
+  <li>[산책 코스]에서 [길 안내]를 누르면 지금 위치와 경유지 좌표가 담긴 길 안내 주소를 구글 지도 앱(또는 브라우저)으로 엽니다.</li>
+  <li>사용자가 [공유], [결산 카드], [백업 저장], [GPX로 내보내기]를 누른 경우에만, 사용자가 고른 앱이나 위치로 이미지·영상·파일이 전달됩니다. 앱은 사진·동영상 접근 권한을 요청하지 않으며, 갤러리를 읽지 않습니다.</li>
+</ul>
+
+<h2>4. 보관 기간과 삭제</h2>
+<p>기록은 사용자가 지울 때까지 기기에 보관됩니다. 앱의 <strong>나의 탐험 → 데이터 → 기록 초기화</strong>로 모든 기록을 지우거나, 앱을 삭제하면 기록도 함께 삭제됩니다. 개발자는 기록을 가지고 있지 않으므로 따로 삭제를 요청할 필요가 없습니다.</p>
+
+<h2>5. 아동의 개인정보</h2>
+<p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 정보를 따로 수집하지 않습니다.</p>
+
+<h2>6. 문의</h2>
+<p>개인정보 관련 문의: <a href="mailto:kwanghyeon@kakao.com">kwanghyeon@kakao.com</a></p>
+
+<h2>7. 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에 시행일과 함께 알립니다.</p>
+
+<p class="muted">행정동 경계: 통계청 SGIS(공공누리 제1유형), vuski/admdongkor(CC BY 4.0) · 나라 경계: Natural Earth(퍼블릭 도메인) · 지하철역: © OpenStreetMap 기여자(ODbL)</p>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Footprint Map Privacy Policy</h1>
+<p class="muted">Effective: November 5, 2026</p>
+
+<p>Footprint Map ("the app") shows on a map the places you have passed through. There is <strong>no account, and your location history is stored only on your device.</strong> It is never sent to the developer or anyone else.</p>
+
+<h2>1. Information the app handles</h2>
+<ul>
+  <li><strong>Location</strong>: used to record where you go (GPS, Wi-Fi, cell). The app stores only ~20 m grid cell numbers, the date each cell was first visited, and visit counts, not raw coordinates. It also stores today's treasure spots and the distance and time you recorded each day.</li>
+  <li><strong>Notes and private zones you create</strong>: stored on the device. Private zones are used only to hide those areas in shared images and timelapse videos.</li>
+  <li><strong>Physical activity</strong>: used to turn GPS off while you are still (to save battery) and, if you choose, to skip trips by vehicle. Activity data itself is not stored.</li>
+  <li><strong>Files you choose</strong>: Google Maps Timeline exports, GPX files and backups are read on the device only.</li>
+</ul>
+<p>The app does not collect your name, phone number, email or advertising ID, and contains no ads or analytics.</p>
+
+<h2>2. Background location</h2>
+<p>When you tap <strong>Keep recording</strong>, the app keeps recording while the screen is off, using a foreground service with an always-visible notification. Stop it any time from the notification or the app. The app does not request "Allow all the time" location access.</p>
+
+<h2>3. Storage and transfer</h2>
+<ul>
+  <li>All records stay in the app's storage on your device. No personal data is shared with or outsourced to third parties.</li>
+  <li>The map is shown with the Google Maps SDK, which may process device information and the visible map area under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+  <li>Outside Korea, neighborhood names may be looked up with the device Geocoder, which can send the center of a ~500 m block to the device maker's or Google's location service.</li>
+  <li>Tapping <strong>Directions</strong> on a walk route opens Google Maps with your location and waypoints.</li>
+  <li>Images, videos and files leave the device only when you tap Share, Recap card, Back up or Export as GPX, and only to the destination you choose. The app does not request photo or video access.</li>
+</ul>
+
+<h2>4. Retention and deletion</h2>
+<p>Records are kept until you delete them with <strong>My exploration → Data → Reset records</strong> or uninstall the app. The developer holds no copy.</p>
+
+<h2>5. Children</h2>
+<p>The app is not directed at children under 14 and does not knowingly collect their information.</p>
+
+<h2>6. Contact</h2>
+<p>Privacy questions: <a href="mailto:kwanghyeon@kakao.com">kwanghyeon@kakao.com</a></p>
+
+<h2>7. Changes</h2>
+<p>Changes to this policy will be posted on this page with a new effective date.</p>
+</section>
+</main>
+</body>
+</html>
